@@ -1,0 +1,90 @@
+<nav id="nav" class="navbar navbar-expand-sm navbar-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)">DidacTIC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/instructor">Instructor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/alumnos">Alumnos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../../../assets/pics/foro.png" alt="Foro" width="35px">Foro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../../../assets/pics/chat.png" alt="Foro" width="35px">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><img src="../../../assets/pics/usuario2.png" alt="Foro" width="30px">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#ModalForm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+            </svg><img src="../../../assets/pics/usuario2.png" alt="Foro" width="30px">Iniciar sesión</a>
+          </li>
+          <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+               
+                  <form action="">
+                    <div class="modal-header">
+                      <h5 class="modal-title" style="color: black;">Iniciar Sesión</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                          <label for="Username" style="color: black;">Nombre de Usuario<span class="text-danger">*</span></label>
+                          <input required type="text" name="username" class="form-control" id="Username" placeholder="Ingrese el nombre de usuario">
+                      </div>
+          
+                      <div class="mb-3">
+                          <label for="Password" style="color: black;">Contraseña<span class="text-danger">*</span></label>
+                          <input required type="password" name="password" class="form-control" id="Password" placeholder="Ingrese la contraseña">
+                      </div>
+                      <div style="margin: 5%;" class="mb-3">
+                          <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                          <label class="form-check-label" for="remember" style="color: black;">Recordar</label>
+                          <a style="color: green;" href="#" class="float-end">¿Olvido su contraseña?</a>
+                      </div>
+                    </div>
+                    <div class="modal-footer pt-4">                  
+                      <button type="button" class="btn btn-success mx-auto w-100">Iniciar Sesión</button>
+                    </div>
+                    <p class="text-center">¿No tiene una cuenta?<a style="color: green;" href="#">Registrarse</a></p> 
+                </form>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="menu" class="menuCSS3">
+    <ul>
+      <button style="height: 63px; width: 63px; border: 0;"  class="btn btn-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">☰</button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img style="width: 50px; height: 50px;" src="../../../assets/pics/logo-didactic.png">Didactic</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <a href="../inscripcion/"><p style="color: black; padding: 5px; cursor: pointer;" class="nav__link">Inscripción a curso</p></a>
+          <br>
+          <a href="../miscursos/"><p style="color: black; padding: 5px; cursor: pointer;" routerLink="" class="nav-link">Mis cursos</p></a>
+          <br>
+          <a href="#"><p style="color: black; padding: 5px; cursor: pointer;" routerLink="" class="nav-link">Evaluar curso</p></a>
+        </div>
+      </div>
+      </ul>  
+  </div> 
